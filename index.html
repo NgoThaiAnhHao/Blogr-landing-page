@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Manrope:wght@500&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&family=Rye&family=Vina+Sans&display=swap"
+    />
+
+    <script defer src="scripts.js"></script>
+
+    <title>Frontend Mentor | [Blogr]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <div class="container">
+      <section class="blogr__page-1--container">
+        <div class="blogr__page-1">
+          <img
+            class="blogr__page-1--background"
+            src="./icons/bg-pattern-intro-desktop.svg"
+            alt="photo"
+          />
+
+          <nav class="intro__nav">
+            <span class="inline">
+              <h1 class="intro__nav--name">Blogr</h1>
+
+              <div class="intro__nav--detail">
+                <!-- PRODUCT  -->
+                <span class="intro__nav--detail-item cols--product">
+                  <span class="row-intro product">
+                    <li class="intro__nav--detail-product">Product</li>
+                    <img
+                      src="./images/icon-arrow-light.svg"
+                      class="icon-arrow-light icon-arrow-light__product"
+                    />
+                  </span>
+                  <ul class="answer product__answers">
+                    <li class="product__answer"><a href="#">Overview</a></li>
+                    <li class="product__answer"><a href="#">Pricing</a></li>
+                    <li class="product__answer"><a href="#">Marketplace</a></li>
+                    <li class="product__answer"><a href="#">Features</a></li>
+                    <li class="product__answer">
+                      <a href="#">Integrations</a>
+                    </li>
+                  </ul>
+                </span>
+
+                <!-- COMPANY  -->
+                <span class="intro__nav--detail-item cols--company">
+                  <span class="row-intro company">
+                    <li class="intro__nav--detail-company">Company</li>
+                    <img
+                      src="./images/icon-arrow-light.svg"
+                      class="icon-arrow-light icon-arrow-light__company"
+                    />
+                  </span>
+                  <ul class="answer company__answers">
+                    <li class="company__answer"><a href="#">About</a></li>
+                    <li class="company__answer"><a href="#">Team</a></li>
+                    <li class="company__answer"><a href="#">Blogs</a></li>
+                    <li class="company__answer"><a href="#">Careers</a></li>
+                  </ul>
+                </span>
+
+                <!-- CONNECT  -->
+                <span class="intro__nav--detail-item cols--connect">
+                  <span class="row-intro connect">
+                    <li class="intro__nav--detail-connect">Connect</li>
+                    <img
+                      src="./images/icon-arrow-light.svg"
+                      class="icon-arrow-light icon-arrow-light__connect"
+                    />
+                  </span>
+                  <ul class="answer connect__answers">
+                    <li class="connect__answer"><a href="#">Contact</a></li>
+                    <li class="connect__answer"><a href="#">Newsletter</a></li>
+                    <li class="connect__answer"><a href="#">LinkedIn</a></li>
+                  </ul>
+                </span>
+
+                <ul class="intro__nav--account">
+                  <li class="intro__nav--account-login">Login</li>
+                  <li class="intro__nav--account-signUp">Sign Up</li>
+                </ul>
+              </div>
+
+              <img
+                src="./icons/icon-hamburger.svg"
+                alt="icon-hamburger.svg"
+                class="intro__nav--detail-img"
+              />
+              <img
+                src="./icons/icon-close.svg"
+                alt="icon-close.svg"
+                class="intro__nav--detail-close"
+              />
+            </span>
+          </nav>
+
+          <div class="intro__main">
+            <h1 class="intro__main--title">A modern publishing platform</h1>
+            <p class="intro__main--desc">
+              Grow your audience and build your online brand
+            </p>
+            <div class="intro__main--buttonMore">
+              <button class="intro__main--button intro__main--buttonMore-start">
+                Start for Free
+              </button>
+              <button class="intro__main--button intro__main--buttonMore-learn">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section blogr__page-2--container section--hidden">
+        <div class="blor__page-2">
+          <div class="blor__page-2">
+            <h1 class="page-2__title">Designed for the future</h1>
+            <img
+              src="./icons/illustration-editor-mobile.svg"
+              alt="illustration-editor-mobile"
+              class="icon-editor__mobile-view"
+            />
+            <div class="page-2__desc">
+              <div class="page-2__desc-1">
+                <h2 class="title desc-1__title">
+                  Introducing an extensible editor
+                </h2>
+                <p class="detail desc-1__detail">
+                  Blogr features an exceedingly intuitive interface which lets
+                  you focus on one thing: creating content. The editor supports
+                  management of multiple blogs and allows easy manipulation of
+                  embeds such as images, videos, and Markdown. Extensibility
+                  with plugins and themes provide easy ways to add functionality
+                  or change the looks of a blog.
+                </p>
+              </div>
+              <div class="page-2__desc-2">
+                <h2 class="title desc-2__title">Robust content management</h2>
+                <p class="detail desc-2__detail">
+                  Flexible content management enables users to easily move
+                  through posts. Increase the usability of your blog by adding
+                  customized categories, sections, format, or flow. With this
+                  functionality, you’re in full control.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section blogr__page-3--container section--hidden">
+        <div class="blogr__page-3">
+          <img
+            src="./icons/illustration-phones.svg"
+            alt="photo"
+            class="blogr__page-3--img"
+          />
+          <div class="blogr__page-3--desc">
+            <h1 class="page-3--desc__title">State of the Art Infrastructure</h1>
+            <p class="page-3--desc__detail">
+              With reliability and speed in mind, worldwide data centers provide
+              the backbone for ultra-fast connectivity. This ensures your site
+              will load instantly, no matter where your readers are, keeping
+              your site competitive.
+            </p>
+          </div>
+          <div class="page-3__background"></div>
+        </div>
+      </section>
+
+      <section class="section blogr__page-4--container section--hidden">
+        <div class="blor__page-4">
+          <img
+            src="./icons/illustration-laptop-mobile.svg"
+            alt="illustration-laptop-mobile"
+            class="icon-laptop__mobile-view"
+          />
+          <div class="page-4--desc">
+            <h1 class="page-4__title">Free, open, simple</h1>
+            <p class="page-4__detail">
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div class="page-4--desc">
+            <h1 class="page-4__title">Powerful tooling</h1>
+            <p class="page-4__detail">
+              Batteries included. We built a simple and straightforward CLI tool
+              that makes customization and deployment a breeze, but capable of
+              producing even the most complicated sites.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer section--hidden section">
+        <h1 class="footer__name">Blogr</h1>
+        <ul class="footer__product">
+          <h3 class="footer__product--name">Product</h3>
+          <li class="footer__product--items">Overview</li>
+          <li class="footer__product--items">Pricing</li>
+          <li class="footer__product--items">Marketplace</li>
+          <li class="footer__product--items">Features</li>
+          <li class="footer__product--items">Integrations</li>
+        </ul>
+        <ul class="footer__company">
+          <h3 class="footer__product--name">Company</h3>
+          <li class="footer__company--items">About</li>
+          <li class="footer__company--items">Team</li>
+          <li class="footer__company--items">Blog</li>
+          <li class="footer__company--items">Careers</li>
+        </ul>
+
+        <ul class="footer__connect">
+          <h3 class="footer__product--name">Contact</h3>
+          <li class="footer__company--items">Contact</li>
+          <li class="footer__company--items">Newsletter</li>
+          <li class="footer__company--items">LinkedIn</li>
+        </ul>
+      </footer>
+
+      <form class="login hidden">
+        <div class="login__close">&#x2715;</div>
+
+        <h1 class="login__title">Login</h1>
+        <input
+          type="text"
+          class="login__username"
+          placeholder="Username"
+          autocomplete="username"
+        />
+        <input
+          type="password"
+          class="login__password"
+          autocomplete="current-password"
+          min="8"
+          placeholder="Password"
+        />
+        <button class="login__submit">Accept</button>
+      </form>
+
+      <form class="signUp hidden">
+        <div class="signUp__close">&#x2715;</div>
+        <h1 class="signUp__title">Sign Up</h1>
+        <input
+          type="text"
+          class="signUp__username"
+          placeholder="Username"
+          autocomplete="username"
+        />
+        <input
+          type="password"
+          class="signUp__password"
+          autocomplete="current-password"
+          min="8"
+          placeholder="Password"
+        />
+        <input
+          type="password"
+          class="signUp__password--accept"
+          autocomplete="current-password"
+          min="8"
+          placeholder="Accept Password"
+        />
+        <button class="signUp__submit">Accept</button>
+      </form>
+
+      <div class="virtual"></div>
+    </div>
+    <!-- Product     Company 
+     Login Sign Up      
+     
+    
+      
+        
+       Company   
+      -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/NgoThaiAnhHao">Ngo Thai Anh Hao</a>.
+    </div>
+  </body>
+</html>
