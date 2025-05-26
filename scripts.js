@@ -362,14 +362,22 @@ if (window.matchMedia("(max-width: 450px)").matches) {
       detail.style.display = "flex";
       closeBtn.style.display = "flex";
 
+      setTimeout(() => {
+        detail.style.opacity = "1";
+      }, 200);
+
       hambugerBtn.style.display = "none";
 
       closeBtn.addEventListener("click", () => {
         account.style.display = "none";
-        detail.style.display = "none";
         closeBtn.style.display = "none";
 
         hambugerBtn.style.display = "flex";
+
+        detail.style.opacity = "0";
+        setTimeout(() => {
+          detail.style.display = "none";
+        }, 200);
       });
     });
   });
