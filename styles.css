@@ -99,6 +99,7 @@ body {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  padding: 0 2rem;
 
   color: var(--White-neutral);
   font-size: 1.6rem;
@@ -702,15 +703,14 @@ body {
 
 .intro__nav--detail-img,
 .intro__nav--detail-close {
-  position: absolute;
   display: none;
   cursor: pointer;
 }
 
-.intro__nav--detail-close {
+/* .intro__nav--detail-close {
   right: 12%;
   transform: translateX(100%);
-}
+} */
 
 .icon-editor__mobile-view,
 .icon-laptop__mobile-view {
@@ -737,6 +737,12 @@ body {
 
   body {
     max-width: 100%;
+  }
+
+  .company:hover,
+  .product:hover,
+  .connect:hover {
+    background: none;
   }
 
   .login,
@@ -772,7 +778,12 @@ body {
   }
 
   .inline {
-    gap: 30rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .intro__nav--detail-close {
+    position: static;
   }
 
   .intro__nav--detail-img {
@@ -802,6 +813,9 @@ body {
 
   .intro__nav--detail {
     border: 0.1rem solid var(--Purple-900-gradient);
+
+    transition: 0.2s;
+    opacity: 0;
 
     border-radius: 5rem;
     width: 80dvw;
