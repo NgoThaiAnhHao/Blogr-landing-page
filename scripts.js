@@ -56,7 +56,7 @@ const stickyNav = () => {
 
   const pageObserver = new IntersectionObserver(sticky, {
     root: null,
-    threshold: 0.3,
+    threshold: 0.5,
   });
 
   pageObserver.observe(page1);
